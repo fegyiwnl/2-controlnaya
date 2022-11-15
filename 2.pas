@@ -13,7 +13,7 @@ begin
     for var k := 1 to j do 
       if a[k] = t then 
       begin
-        n[k] := n[k] + 1;
+        n[k] += 1;
         if n[m] < n[k] then 
           m := k;
         t := '';
