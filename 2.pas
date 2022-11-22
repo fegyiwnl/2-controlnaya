@@ -1,13 +1,18 @@
+const Size = 50;
+
 var
   
   j, k, m: integer;
   t: string;
-  a: array[1..50] of string;
-  n: array[1..50] of integer;
+  A: array of string;
+  N: array of integer;
 
 procedure aa;
 
 begin
+
+  SetLength(A, Size);
+  SetLength(N, Size);
   
   if t <> '' then
     for var k := 1 to j do 
@@ -39,7 +44,8 @@ begin
   for var i := 1 to length(s) do 
     if s[i] <> ' ' then 
       t += s[i] 
-    else aa;
+    else 
+      aa;
   
   for var i := 1 to j do 
   begin
